@@ -1,0 +1,20 @@
+class Student():
+    def __init__(self,surname,name,studentnumber,course):
+        self.surname=surname
+        self.name=name
+        self.studentnumber=studentnumber
+        self.course=course
+    def getInformation(self):
+            print(self.surname,self.name,self.studentnumber,self.course)
+
+# and testing below
+
+from student import *
+p=Student("Granger","Mary",11,"C.C.")
+p1=Student("Granger","Sam",12,"C.S.")
+p2=Student("Granger","Edd",13,"S.E.")
+p3=Student("Granger","Daniel",12,"C.C.")
+student=[p,p1,p2,p3]
+for p in student:
+    print()
+    p.getInformation()
